@@ -68,7 +68,22 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+#botao{
+	width: 100%;
+	text-align: center; 
+}
+.nome{
+	color: #E8E8E8;
+	text-align:right; 
+	width: 20%;
+}
+#mensagem{
+	width: 70%;
+	height: 30%;
+}
+#email{
+	width: 70%;
+}
 #table{
 	width: 100%;	
 	text-align: center;
