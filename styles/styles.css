@@ -77,6 +77,22 @@ body{
 	text-align:right; 
 	width: 20%;
 }
+.facebook{
+	width: 50%;
+	height: 100%;
+}
+.twitter{
+	width: 50%;
+	height: 100%;
+}
+.soundCloud{
+	width: 70%;
+	height: 100%;
+}
+.instagram{
+	width: 30%;
+	height: 100%;
+}
 #mensagem{
 	width: 70%;
 	height: 30%;
