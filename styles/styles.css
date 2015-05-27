@@ -117,9 +117,9 @@ body{
 }
 .imagehome img{
   float:left;
-  max-width: 500px;   /* Máximo da largura da imagem */
+  max-width: 500px;   
   width: 100%;
-  max-height: 450px;  /* Máximo da altura da imagem */
+  max-height: 450px;  
   min-height: auto;
   border: 1px solid #4f4f4f;
   border-radius: 4px;
