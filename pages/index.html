@@ -1,105 +1,150 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Rock Stub</title>
 		<meta charset="UTF-8"> 
-		<link rel="stylesheet" href="../styles/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../styles/bootstrap-3.3.4-dist/css/bootstrap.css">
+		<link rel="stylesheet" href="../styles/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="../styles/styles.css">
-		
+		<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cinzel:700' rel='stylesheet' type='text/css'>
+
+		<style>
+			.phrasehome
+			{
+				font-family: 'Cinzel Decorative', cursive;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="container">
+		<nav class="navbar navbar-inverse navbar-fixed-top menu-item" id="my-navbar">
+			<div class="container">
+				<div class="collapse navbar-collapse menu-container" id="navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="menu-item"><a class="menu-item" href="#home">HOME</a></li>
+						<li class="menuBarLi"><a class="menuBarA" href="#about">ABOUT</a></li>
+						<li class="menuBarLi"><a class="menuBarA" href="#shows">SHOWS</a></li>
+						<li class="menuBarLi"><a class="menuBarA" href="#musicas">MÚSICAS</a></li>
+						<li class="menuBarLi"><a class="menuBarA" href="#videoclipes">VIDEOCLIPES</a></li>
+						<li class="menuBarLi"><a class="menuBarA" href="#contato">CONTATO</a></li>
+					</ul> 
+				</div>
+			</div>
+		</nav>
 
-			<div class="row">
-				<div class="col-*-*">
-					<div class="menuContainer">
-						<div class="menuBar">
-							<ul class="nav navbar-nav">
-								<li class="menuBarLi"><a class="menuBarA" href="#">HOME</a></li>
-								<li class="menuBarLi"><a class="menuBarA" href="#">ABOUT</a></li>
-								<li class="menuBarLi"><a class="menuBarA" href="#">SHOWS</a></li>
-								<li class="menuBarLi"><a class="menuBarA" href="#">MÚSICA</a></li>
-								<li class="menuBarLi"><a class="menuBarA" href="#">VIDEOCLIPES</a></li>
-								<li class="menuBarLi"><a class="menuBarA" href="#">CONTATO</a></li>
-							</ul> 
+		<hr>
+
+		<div class="container">
+			<section>
+				<div class="page-header" id="home">
+					<div class="label">
+						HOME
+					</div>
+					<div class="home" id="row">
+						<div id="cell">
+							<p class="imagehome"><img src ="../resources/images/homeimage.jpg"/></p>
 						</div>
+						<div id="cell">
+							<p class="phrasehome">"&Eacute melhor queimar do que apagar aos poucos" <em>(Kurt Cobain)</em></p>
+					 	</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="label">
-			MÚSICAS
-			</div>
-
-			<div class="row" style="margin:0; padding:0;">
-				<div class="col-*-*">
-					<table id="table">
-						<tr>
-							<td>
-								<div>
-									<img class="image" src="../resources/images/musica1.jpg">
-								</div>
-								<div>
-									<audio class="music" controls>
-										<source src="../resources/music/music1.mp3" type="audio/mpeg">
-									</audio> 
-								</div>
-							</td>
-							<td>
-								<div>
-									<img class="image" src="../resources/images/musica2.jpg">
-								</div>
-								<div>
-									<audio class="music" controls>
-										<source src="../resources/music/music2.mp3" type="audio/mpeg">
-									</audio> 
-								</div>
-							</td>
-							<td>
-								<div>
-									<img class="image" src="../resources/images/musica3.jpg">
-								</div>
-								<div>
-									<audio class="music" controls>
-										<source src="../resources/music/music3.mp3" type="audio/mpeg">
-									</audio> 
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div>
-									<img class="image" src="../resources/images/musica4.jpg">
-								</div>
-								<div>
-									<audio class="music" controls>
-										<source src="../resources/music/music4.mp3" type="audio/mpeg">
-									</audio> 
-								</div>
-							</td>
-							<td>
-								<div>
-									<img class="image" src="../resources/images/musica5.jpg">
-								</div>
-								<div>
-									<audio class="music" controls>
-										<source src="../resources/music/music5.mp3" type="audio/mpeg">
-									</audio> 
-								</div>
-							</td>
-							<td>
-								<div>
-									<img class="image" src="../resources/images/musica6.jpg">
-								</div>
-								<div>
-									<audio class="music" controls>
-										<source src="../resources/music/music6.mp3" type="audio/mpeg">
-									</audio> 
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
+			</section>
 		</div>
+
+		<div class="container">
+			<section>
+				<div class="page-header" id="about">
+					<!-- TODO terminar -->
+					<div class="label">ABOUT</div> 
+				</div>
+					<div id="cell">
+							<p class="imagehome"><img src ="../resources/images/about-ben10-1.jpg"/></p>
+						</div>
+					<div id="cell">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				
+			</section>
+		</div>
+
+		<div class="container">
+			<section>
+				<div class="page-header" id="musicas">
+					<div class="label">MÚSICAS</div>
+				</div>
+				<div class="row music-container">
+			        <div class="col-md-4">
+			        	<div>
+							<img class="image" src="../resources/images/musica1.jpg">
+						</div>
+						<div>
+							<audio class="music" controls>
+								<source src="../resources/music/music1.mp3" type="audio/mpeg">
+							</audio> 
+						</div>
+			        </div>
+			        <div class="col-md-4">
+			        	<div>
+							<img class="image" src="../resources/images/musica2.jpg">
+						</div>
+						<div>
+							<audio class="music" controls>
+								<source src="../resources/music/music2.mp3" type="audio/mpeg">
+							</audio> 
+						</div>
+			        </div>
+			        <div class="col-md-4">
+			        	<div>
+							<img class="image" src="../resources/images/musica3.jpg">
+						</div>
+						<div>
+							<audio class="music" controls>
+								<source src="../resources/music/music3.mp3" type="audio/mpeg">
+							</audio> 
+						</div>
+			        </div>
+    			</div>
+				<div class="row music-container">
+			        <div class="col-md-4">
+			        	<div>
+								<img class="image" src="../resources/images/musica4.jpg">
+							</div>
+							<div>
+								<audio class="music" controls>
+									<source src="../resources/music/music4.mp3" type="audio/mpeg">
+								</audio> 
+							</div>
+			        </div>
+			        <div class="col-md-4">
+			        	<div>
+								<img class="image" src="../resources/images/musica5.jpg">
+							</div>
+							<div>
+								<audio class="music" controls>
+									<source src="../resources/music/music5.mp3" type="audio/mpeg">
+								</audio> 
+							</div>
+			        </div>
+			        <div class="col-md-4">
+			        	<div>
+								<img class="image" src="../resources/images/musica6.jpg">
+							</div>
+							<div>
+								<audio class="music" controls>
+									<source src="../resources/music/music6.mp3" type="audio/mpeg">
+								</audio> 
+							</div>
+			        </div>
+			    </div>
+			</section>
+		</div>
+
+
 	</body>
 </html>
