@@ -4,6 +4,12 @@ body{
     padding:0;
 }
 
+.main{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .menu-container{
 	background-color: #363636;
 	background-image: url("../resources/images/logo-barra-menu.jpg");
@@ -16,18 +22,6 @@ body{
 	font-size: 18px;
 	font-weight: 700px;
 }
-/*
-.menu-item {
-	color: red;
-}
-
-.menu-item:link, .menu-item:visited {
-    color: #CD0000;
-}
-
-.menu-item:hover, .menu-item:active {
-    background-color: #FF00FF;
-}*/
 
 .music-container {
 	margin-left: auto;
@@ -49,6 +43,7 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 #botao{
 	width: 100%;
 	text-align: center; 
@@ -59,26 +54,27 @@ body{
 	text-align:right; 
 	width: 20%;
 }
-<<<<<<< HEAD
 
-=======
 .facebook{
 	width: 50%;
 	height: 100%;
 }
+
 .twitter{
 	width: 50%;
 	height: 100%;
 }
+
 .soundCloud{
 	width: 70%;
 	height: 100%;
 }
+
 .instagram{
 	width: 30%;
 	height: 100%;
 }
->>>>>>> 3c33ade1d1ef15b524b75027cf417bb6942d335b
+
 #mensagem{
 	width: 70%;
 	height: 30%;
@@ -114,8 +110,9 @@ body{
 }
 
 .home{
-	color:#E8E8E8;
-	padding: 5em;  
+  color:#E8E8E8;
+  padding: 5em;
+  
 }
 
 .imagehome{
