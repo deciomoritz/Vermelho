@@ -16,12 +16,29 @@ body{
 	background-size: 261px 250%;
 	background-repeat: no-repeat;
 	background-position: right;
-	height: 10%;
-	color: red;
 	font-family: 'Cinzel';
 	font-size: 18px;
 	font-weight: 700px;
 }
+
+.footer {
+	background-color: #363636;
+	width: 100%;
+	font-family: 'Cinzel';
+	font-size: 18px;
+	font-weight: 700px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+}
+
+/*.footer > li {
+	display: inline-block;
+	margin-left: 30px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}*/
 
 .music-container {
 	margin-left: auto;
@@ -34,14 +51,17 @@ body{
 	margin-right: auto;
 }
 
-.label{
+.my-label{
 	color: #FF3823;
     font-size: 40px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: 11px;
+    font-family: 'Frijole', cursive;
 }
 
 #botao{
@@ -55,24 +75,9 @@ body{
 	width: 20%;
 }
 
-.facebook{
-	width: 50%;
-	height: 100%;
-}
-
-.twitter{
-	width: 50%;
-	height: 100%;
-}
-
-.soundCloud{
-	width: 70%;
-	height: 100%;
-}
-
-.instagram{
-	width: 30%;
-	height: 100%;
+.social-net{
+	width: 50px;
+	height: 50px;
 }
 
 #mensagem{
@@ -115,13 +120,13 @@ body{
   
 }
 
-.imagehome{
+.image-home{
 	max-width: 500px;
 	width: 100%;
 	height: auto;
 }
 
-.imagehome img{
+.image-home img{
 	float:left;
 	max-width: 500px;   
 	width: 100%;
@@ -129,7 +134,7 @@ body{
 	min-height: auto;
 }
 
-.phrasehome{
+.phrase-home{
 	float:right;
 	position: relative;
 	top: 50%;
@@ -140,6 +145,26 @@ body{
 	max-width: 500px;
 	width: 100%;
 	height: auto;
+	font-family: 'Cinzel Decorative', cursive;
+}
+
+.about {
+	max-height: 450px;
+	padding-top: 20px;
+}
+
+.text-about {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: justify;
+	text-indent: 50px;
+	font-size: 18px;
+	width: 60%;
+	font-family: 'Cinzel Decorative', cursive;
+	color:  #E8E8E8;
+	padding-left: 30px;
+	padding-right: 10px;
 }
 
 div p em{
@@ -152,4 +177,5 @@ div p em{
 
 #cell {
 	display: table-cell;
+	width: 40%;
 }

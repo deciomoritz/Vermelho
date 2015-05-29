@@ -8,13 +8,8 @@
 		<link rel="stylesheet" href="../styles/styles.css">
 		<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Cinzel:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
 
-		<style>
-			.phrasehome
-			{
-				font-family: 'Cinzel Decorative', cursive;
-			}
-		</style>
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse navbar-fixed-top menu-item" id="my-navbar">
@@ -22,11 +17,11 @@
 				<div class="collapse navbar-collapse menu-container" id="navbar-collapse">
 					<ul class="nav navbar-nav">
 						<li class="menu-item"><a class="menu-item" href="#home">HOME</a></li>
-						<li class="menuBarLi"><a class="menuBarA" href="#about">ABOUT</a></li>
-						<li class="menuBarLi"><a class="menuBarA" href="#shows">SHOWS</a></li>
-						<li class="menuBarLi"><a class="menuBarA" href="#musicas">MÚSICAS</a></li>
-						<li class="menuBarLi"><a class="menuBarA" href="#videoclipes">VIDEOCLIPES</a></li>
-						<li class="menuBarLi"><a class="menuBarA" href="#contato">CONTATO</a></li>
+						<li class="menuBarLi"><a href="#about">ABOUT</a></li>
+						<li class="menuBarLi"><a href="#shows">SHOWS</a></li>
+						<li class="menuBarLi"><a href="#musicas">MÚSICAS</a></li>
+						<li class="menuBarLi"><a href="#videoclipes">VIDEOCLIPES</a></li>
+						<li class="menuBarLi"><a href="#contato">CONTATO</a></li>
 					</ul> 
 				</div>
 			</div>
@@ -37,15 +32,15 @@
 		<div class="container">
 			<section>
 				<div class="page-header" id="home">
-					<div class="label">
+					<div class="my-label">
 						HOME
 					</div>
 					<div class="home" id="row">
 						<div id="cell">
-							<p class="imagehome"><img src ="../resources/images/homeimage.jpg"/></p>
+							<p class="image-home"><img src ="../resources/images/homeimage.jpg"/></p>
 						</div>
 						<div id="cell">
-							<p class="phrasehome">"&Eacute melhor queimar do que apagar aos poucos" <em>(Kurt Cobain)</em></p>
+							<p class="phrase-home">"&Eacute melhor queimar do que apagar aos poucos" <em>(Kurt Cobain)</em></p>
 					 	</div>
 					</div>
 				</div>
@@ -54,21 +49,28 @@
 
 		<div class="container">
 			<section>
-				<div class="page-header" id="about">
-					<!-- TODO terminar -->
-					<div class="label">ABOUT</div> 
-				</div>
-					<div id="cell">
-							<p class="imagehome"><img src ="../resources/images/about-ben10-1.jpg"/></p>
-						</div>
-					<div id="cell">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="page-header">
+					<div class="page-header" id="about">
+						<div class="my-label">
+							ABOUT
+						</div> 
 					</div>
+					
+					<div class="about">
+						<div id="cell">
+							<p class="image-home"><img src ="../resources/images/about-ben10-1.jpg"/></p>
+						</div>
+						<div class="text-about" id="cell">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. </p>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+					
 				
 			</section>
 		</div>
@@ -76,7 +78,9 @@
 		<div class="container">
 			<section>
 				<div class="page-header" id="musicas">
-					<div class="label">MÚSICAS</div>
+					<div class="my-label">
+						MÚSICAS
+					</div>
 				</div>
 				<div class="row music-container">
 			        <div class="col-md-4">
@@ -113,38 +117,98 @@
 				<div class="row music-container">
 			        <div class="col-md-4">
 			        	<div>
-								<img class="image" src="../resources/images/musica4.jpg">
-							</div>
-							<div>
-								<audio class="music" controls>
-									<source src="../resources/music/music4.mp3" type="audio/mpeg">
-								</audio> 
-							</div>
+							<img class="image" src="../resources/images/musica4.jpg">
+						</div>
+						<div>
+							<audio class="music" controls>
+								<source src="../resources/music/music4.mp3" type="audio/mpeg">
+							</audio> 
+						</div>
 			        </div>
 			        <div class="col-md-4">
 			        	<div>
-								<img class="image" src="../resources/images/musica5.jpg">
-							</div>
-							<div>
-								<audio class="music" controls>
-									<source src="../resources/music/music5.mp3" type="audio/mpeg">
-								</audio> 
-							</div>
+							<img class="image" src="../resources/images/musica5.jpg">
+						</div>
+						<div>
+							<audio class="music" controls>
+								<source src="../resources/music/music5.mp3" type="audio/mpeg">
+							</audio> 
+						</div>
 			        </div>
 			        <div class="col-md-4">
 			        	<div>
-								<img class="image" src="../resources/images/musica6.jpg">
-							</div>
-							<div>
-								<audio class="music" controls>
-									<source src="../resources/music/music6.mp3" type="audio/mpeg">
-								</audio> 
-							</div>
+							<img class="image" src="../resources/images/musica6.jpg">
+						</div>
+						<div>
+							<audio class="music" controls>
+								<source src="../resources/music/music6.mp3" type="audio/mpeg">
+							</audio> 
+						</div>
 			        </div>
 			    </div>
 			</section>
 		</div>
+		<div class="page-header" id="contato">
+			<div class="my-label">
+				CONTATO
+			</div>
+		</div>
 
+		<div class="container">
+			<section>
+				<div class="row">
+					<div class="col-md-offset-4 col-md-4">
+						<form>
+					  		<div class="form-inline">
+					    		<label class="nome">Nome: </label>
+					    		<input type="email" class="form-control" id="email,exampleInputEmail1" placeholder="Digite seu nome">
+					  		</div>
+					  		<br/>
+					  		<div class="form-inline">
+					    		<label class="nome">Email: </label>
+					    		<input type="password" class="form-control" id="email,exampleInputPassword1" placeholder="Digite seu E-mail">
+					  		</div>
+					  		<br/>
+					  		<div class="form-inline">
+					    		<label class="nome">Mensagem: </label>
+					    		<textarea class="form-control" rows="3" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+					  		</div>
+					  		<br/>
+					  		<div class="col-md-offset-4 col-md-4">
+					  			<button type="submit" class="btn btn-default" id="botao">Enviar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+					<br/>
+					<div class="row footer">
+						<div class="col-md-1">
+							<a href="http://facebook.com"> 
+								<img src="../resources/images/facebook_logo.png" class="social-net">
+							</a>
+						</div>
+						<div class="col-md-1">
+							<a href="http://twitter.com">
+								<img src="../resources/images/twitter_logo.png" class="social-net">
+							</a>
+						</div>
+						<div class="col-md-1">
+							<a href="https://soundcloud.com/">
+								<img src="../resources/images/soundCloud_logo.jpg" class="social-net">
+							</a>
+						</div>
+						<div class="col-md-1">
+							<a href="https://instagram.com/">
+								<img src="../resources/images/insta_logo.jpg" class="social-net">
+							</a>
+						</div>
+						
+					</div>
+				
+			</section>
+		</div>
+		
 
 	</body>
 </html>
