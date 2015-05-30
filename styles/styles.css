@@ -22,9 +22,10 @@ body{
 }
 
 footer {
-	/*background-color: #363636;*/
-	background-color: #FFFFFF;
+	background-color: #363636;
+	color: #FFFFFF;
 	width: 100%;
+	margin-top: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -64,9 +65,34 @@ footer {
 	width: 20%;
 }
 
-.social-net{
-	width: 50px;
-	height: 50px;
+.social-net-container {
+	text-align: center;
+}
+
+.social-net-container .social-net-icon{
+	color: white;
+    border-radius: 20px;
+    font-size: 30px;
+    min-width: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.fa-facebook {
+	background:#3b5998
+} 
+
+.fa-twitter {
+	background:#00aced
+}
+
+.fa-instagram {
+	background: #517fa4;
+}
+
+.fa-soundcloud {
+	background: #FF7700;	
 }
 
 #mensagem{
@@ -155,7 +181,7 @@ footer {
 	padding-left: 30px;
 	padding-right: 10px;
 }
-/* CSS videos.html */
+
 .video-left {
 	display: inline-block; 
 	float:left; 
@@ -180,12 +206,12 @@ footer {
 
 .legenda-video {
 	font-family: 'Cinzel Decorative', cursive, Arial, sans;
-	color: #FFFFFF;
+	color: white;
 }
 
 
 div p em{
-  font-size: 0.5em;
+	font-size: 0.5em;
 }
 
 #row {
