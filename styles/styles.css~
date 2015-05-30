@@ -158,34 +158,6 @@ body{
 	padding-left: 30px;
 	padding-right: 10px;
 }
-/* CSS videos.html */
-.video-left {
-	display: inline-block; 
-	float:left; 
-	margin: 1% 1% 1% 2%;
-}
-
-.video-right {
-	display: inline-block; 
-	float:right; 
-	margin: 1% 2% 1% 1%;
-}
-
-.video {
-	margin: 10% 0;
-}
-
-.posicao-legenda {
-	text-align: center;
-	position: relative; 
-	top: -2em;
-}
-
-.legenda-video {
-	font-family: 'Cinzel Decorative', cursive, Arial, sans;
-	color: #FFFFFF;
-}
-
 
 div p em{
   font-size: 0.5em;
