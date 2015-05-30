@@ -222,3 +222,13 @@ div p em{
 	display: table-cell;
 	width: 40%;
 }
+
+.carousel-inner > .item > img {
+    width: 100%;
+    margin: auto;
+    height: 400px;
+}
+
+.carousel {
+	width: 100%;
+}
