@@ -15,8 +15,33 @@
 		<link href='http://fonts.googleapis.com/css?family=Cinzel:700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
 
+
 	</head>
 	<body>
+
+				<script type="text/javascript">
+		console.alert("hi");
+				$('#myCarousel').carousel({
+
+				  interval: 10000;
+				})
+
+				$('.carousel .item').each(function(){
+				  var next = $(this).next();
+				  if (!next.length) {
+				    next = $(this).siblings(':first');
+				  }
+				  next.children(':first-child').clone().appendTo($(this));
+				  
+				  if (next.next().length>0) {
+				    next.next().children(':first-child').clone().appendTo($(this));
+				  }
+				  else {
+				  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+				  }
+				});
+		</script>
+
 		<nav class="navbar navbar-inverse navbar-fixed-top menu-item" id="my-navbar">
 			<div class="container">
 				<div class="collapse navbar-collapse menu-container" id="navbar-collapse">
@@ -85,29 +110,56 @@
 
 		<div class="container">
 			<section>
-				<div class="page-header">
-					<div class="page-header" id="about">
-						<div class="my-label">
-							ABOUT
-						</div> 
-					</div>
+				<div class="page-header" id="about">
+					<div class="my-label">
+						ABOUT
+					</div> 
+				</div>
 					
-					<div class="about">
-						<div id="cell">
-							<p class="image-home"><img src ="../resources/images/about-ben10-1.jpg"/></p>
-						</div>
-						<div class="text-about" id="cell">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. </p>
-							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
+				<div class="about">
+					<div id="cell">
+						<p class="image-home"><img src ="../resources/images/about-ben10-1.jpg"/></p>
 					</div>
-					
-				
+					<div class="text-about" id="cell">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. </p>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+			</section>
+		</div>
+
+		<div class="container">
+			<section>
+				<div class="page-header" id="shows">
+					<div class="my-label">
+						SHOWS
+					</div>
+
+					<div class="col-md-7">
+<div class="carousel slide" id="myCarousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="col-md-4"><a href="#"><img src="../resources/images/flyer1.jpg" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-md-4"><a href="#"><img src="../resources/images/flyer2.png" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-md-4"><a href="#"><img src="../resources/images/flyer3.jpg" class="img-responsive"></a></div>
+    </div>
+
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+</div>
+</div>
+
+
+				</div>
 			</section>
 		</div>
 
@@ -220,6 +272,7 @@
 				</div>
 			</section>
 		</div>
+
 		<div class="page-header" id="contato">
 			<div class="my-label">
 				CONTATO
@@ -252,30 +305,23 @@
 						</form>
 					</div>
 				</div>
-
 			</section>
 		</div>
 		
 		<footer>
 			<div class="section-container social-net-container">
-					<a href="http://facebook.com"> 
-						<i class="fa fa-facebook social-net-icon fa-facebook"></i>
-					</a>
-				
-					<a href="http://twitter.com">
-						<i class="fa fa-twitter-square social-net-icon fa-twitter"></i>
-					</a>
-				
-				
-					<a href="https://soundcloud.com/">
-						<i class="fa fa-soundcloud social-net-icon fa-soundcloud"></i>
-					</a>
-				
-					<a href="https://instagram.com/">
-						<i class="fa fa-instagram social-net-icon fa-instagram"></i>
-					</a>
-				
-			
+				<a href="http://facebook.com"> 
+					<i class="fa fa-facebook social-net-icon fa-facebook"></i>
+				</a>
+				<a href="http://twitter.com">
+					<i class="fa fa-twitter-square social-net-icon fa-twitter"></i>
+				</a>
+				<a href="https://soundcloud.com/">
+					<i class="fa fa-soundcloud social-net-icon fa-soundcloud"></i>
+				</a>
+				<a href="https://instagram.com/">
+					<i class="fa fa-instagram social-net-icon fa-instagram"></i>
+				</a>
 			</div>		
 		</footer>
 		
