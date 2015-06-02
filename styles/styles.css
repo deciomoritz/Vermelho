@@ -130,9 +130,9 @@ footer {
 }
 
 .home{
-  color:#E8E8E8;
-  padding: 5em;
-  
+	color:#E8E8E8;
+	padding: 5em;
+
 }
 
 .image-home{
@@ -150,36 +150,24 @@ footer {
 }
 
 .phrase-home{
-	float:right;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 	text-align: center;
-	vertical-align: middle;
 	font-size: 2.5em;
-	max-width: 500px;
-	width: 100%;
-	height: auto;
 	font-family: 'Cinzel Decorative', cursive;
 }
 
 .about {
-	max-height: 450px;
-	padding-top: 20px;
+/*	max-height: 450px;
+	padding-top: 20px;*/
 }
 
 .text-about {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 	text-align: justify;
 	text-indent: 50px;
-	font-size: 18px;
-	width: 60%;
+	font-size: 1.5em;
 	font-family: 'Cinzel Decorative', cursive;
 	color:  #E8E8E8;
-	padding-left: 30px;
-	padding-right: 10px;
+	/*padding-left: 30px;
+	padding-right: 10px;*/
 }
 
 .video-left {
@@ -212,15 +200,6 @@ footer {
 
 div p em{
 	font-size: 0.5em;
-}
-
-#row {
-	display: table-row;
-}
-
-#cell {
-	display: table-cell;
-	width: 40%;
 }
 
 .carousel-inner > .item > img {
