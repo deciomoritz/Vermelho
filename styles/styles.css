@@ -12,8 +12,8 @@ body{
 
 .menu-container{
 	background-color: #363636;
-	background-image: url("../resources/images/logo-barra-menu.jpg");
-	background-size: 261px 250%;
+	background-image: url("../resources/images/logo-barra-menu2.jpg");
+	background-size: 261px 100%;
 	background-repeat: no-repeat;
 	background-position: right;
 	font-family: 'Cinzel';
@@ -183,13 +183,17 @@ footer {
 }
 
 .video {
-	margin: 10% 0;
+	/*margin: 10% 0;*/
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .posicao-legenda {
 	text-align: center;
 	position: relative; 
-	top: -2em;
+	padding-top: 10px;
+	padding-bottom: 20px;
 }
 
 .legenda-video {
