@@ -132,6 +132,7 @@ footer {
 .home{
 	color:#E8E8E8;
 	padding: 5em;
+	background-color: #4F4F4F;
 
 }
 
@@ -153,6 +154,10 @@ footer {
 	text-align: center;
 	font-size: 2.5em;
 	font-family: 'Cinzel Decorative', cursive;
+}
+
+.bg-grey {
+	background-color: #696969;
 }
 
 .text-about {

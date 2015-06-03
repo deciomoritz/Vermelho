@@ -17,36 +17,41 @@
 
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top menu-item" id="my-navbar">
-			<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-				<div class="collapse navbar-collapse menu-container" id="navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li class="menu-item"><a class="menu-item" href="#home">HOME</a></li>
-						<li class="menuBarLi"><a href="#about">ABOUT</a></li>
-						<li class="menuBarLi"><a href="#shows">SHOWS</a></li>
-						<li class="menuBarLi"><a href="#musicas">MÚSICAS</a></li>
-						<li class="menuBarLi"><a href="#videoclipes">VIDEOCLIPES</a></li>
-						<li class="menuBarLi"><a href="#contato">CONTATO</a></li>
-					</ul> 
+
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top menu-item" id="my-navbar">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+						<div class="collapse navbar-collapse menu-container" id="navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li class="menu-item"><a class="menu-item" href="#home">HOME</a></li>
+								<li class="menuBarLi"><a href="#about">ABOUT</a></li>
+								<li class="menuBarLi"><a href="#shows">SHOWS</a></li>
+								<li class="menuBarLi"><a href="#musicas">MÚSICAS</a></li>
+								<li class="menuBarLi"><a href="#videoclipes">VIDEOCLIPES</a></li>
+								<li class="menuBarLi"><a href="#contato">CONTATO</a></li>
+							</ul> 
+						</div>
 				</div>
-			</div>
-		</nav>
+			</nav>
 
-		<hr>
+			<hr>
 
+			
+		</header>
+		
 		<div class="container">
 			<section>
-				<div class="page-header">
+				<div class="page-header" id="home">
 				</div>
 
 				<div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
@@ -90,14 +95,13 @@
 						<p class="phrase-home">"&Eacute melhor queimar do que apagar aos poucos" <em>(Kurt Cobain)</em></p>
 				 	</div>
 				</div>
-
 			</section>
 		</div>
 
-		<div class="container">
-			<section>
-
-					<div class="page-header">
+		<div class="bg-grey">
+			<div class="container">
+				<section>
+					<div class="page-header" id="about">
 						<div class="my-label">
 							ABOUT
 						</div> 
@@ -117,8 +121,10 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 					</div>
-					
-			</section>
+				</section>
+			</div>
+			<br>
+			<br>
 		</div>
 
 		<div class="container">
@@ -195,41 +201,47 @@
 			</section>
 		</div>
 
-		<div class="container">
-			<section>
-				<div class="page-header" id="videoclipes">	
-					<div class="my-label">
-						VÍDEOS
-					</div>
-				</div>
-				<div class="row" style="margin:0; padding:0;">
-					<div class="video-left">
-						<iframe width="392" height="221" src="https://www.youtube.com/embed/VcByktP-mdE" frameborder="0" allowfullscreen class="video"></iframe>
-						<div class="posicao-legenda">
-							<p class="legenda-video">AC/DC - ThunderStruck</p>
+		<br>
+		<br>
+
+		<div class="bg-grey">
+			<div class="container">
+				<section>
+					<div class="page-header" id="videoclipes">	
+						<div class="my-label">
+							VÍDEOS
 						</div>
 					</div>
-					<div class="video-right">
-						<iframe width="392" height="221" src="https://www.youtube.com/embed/r3sARnlN-T0" frameborder="0" allowfullscreen class="video"></iframe>
-						<div class="posicao-legenda">
-							<p class="legenda-video">Scorpions - Rock You Like Hurricane</p>
+					<div class="row" style="margin:0; padding:0;">
+						<div class="video-left">
+							<iframe width="392" height="221" src="https://www.youtube.com/embed/VcByktP-mdE" frameborder="0" allowfullscreen class="video"></iframe>
+							<div class="posicao-legenda">
+								<p class="legenda-video">AC/DC - ThunderStruck</p>
+							</div>
+						</div>
+						<div class="video-right">
+							<iframe width="392" height="221" src="https://www.youtube.com/embed/r3sARnlN-T0" frameborder="0" allowfullscreen class="video"></iframe>
+							<div class="posicao-legenda">
+								<p class="legenda-video">Scorpions - Rock You Like Hurricane</p>
+							</div>
+						</div>
+						<div class="video-left">
+							<iframe width="392" height="221" src="https://www.youtube.com/embed/DsmevZCy8CM" frameborder="0" allowfullscreen class="video"></iframe>
+							<div class="posicao-legenda">
+								<p class="legenda-video">Guns 'N Roses - Welcome to the Jungle - Live Rock in Rio 2</p>
+							</div>
+						</div>
+						<div class="video-right">
+							<iframe width="392" height="221" src="https://www.youtube.com/embed/_CE-eNUW8vI" frameborder="0" allowfullscreen class="video"></iframe>
+							<div class="posicao-legenda">
+								<p class="legenda-video">Masterplan - Crimson Rider</p>
+							</div>
 						</div>
 					</div>
-					<div class="video-left">
-						<iframe width="392" height="221" src="https://www.youtube.com/embed/DsmevZCy8CM" frameborder="0" allowfullscreen class="video"></iframe>
-						<div class="posicao-legenda">
-							<p class="legenda-video">Guns 'N Roses - Welcome to the Jungle - Live Rock in Rio 2</p>
-						</div>
-					</div>
-					<div class="video-right">
-						<iframe width="392" height="221" src="https://www.youtube.com/embed/_CE-eNUW8vI" frameborder="0" allowfullscreen class="video"></iframe>
-						<div class="posicao-legenda">
-							<p class="legenda-video">Masterplan - Crimson Rider</p>
-						</div>
-					</div>
-				</div>
-			</section>
+				</section>
+			</div>	
 		</div>
+
 		<div class="page-header" id="contato">
 			<div class="my-label">
 				CONTATO
