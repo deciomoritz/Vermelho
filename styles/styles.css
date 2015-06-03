@@ -164,10 +164,8 @@ footer {
 	text-align: justify;
 	text-indent: 50px;
 	font-size: 1.5em;
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: 'Roboto', sans-serif;
 	color:  #E8E8E8;
-	/*padding-left: 30px;
-	padding-right: 10px;*/
 }
 
 .video-left {
@@ -183,7 +181,6 @@ footer {
 }
 
 .video {
-	/*margin: 10% 0;*/
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
