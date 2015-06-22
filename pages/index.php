@@ -1,3 +1,4 @@
+<?php include 'conn.php';?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -18,7 +19,6 @@
 
 	</head>
 	<body>
-		<?php include 'conn.php';?>
 		<header>
 			<nav class="navbar navbar-inverse navbar-fixed-top menu-item" id="my-navbar">
 				<div class="container">
