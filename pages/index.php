@@ -18,7 +18,7 @@
 
 	</head>
 	<body>
-
+		<?php include 'conn.php';?>
 		<header>
 			<nav class="navbar navbar-inverse navbar-fixed-top menu-item" id="my-navbar">
 				<div class="container">
@@ -43,11 +43,7 @@
 							</ul> 
 						</div>
 				</div>
-			</nav>
-
-			<hr>
-
-			
+			</nav>			
 		</header>
 		
 		<div class="container">
@@ -62,15 +58,40 @@
 						<li data-target="#screenshot-carousel" data-slide-to="2"></li>
 					</ol>
 
+						<?php
+							$query = "select media.name,media.path from frame,media where media.frame_id = frame.id and frame.name = 'home'";
+
+							$result = $conn->query($query);
+
+							$row = $result->fetch();
+								$imageName = $row["name"];
+								$imagePath = $row["path"];
+						?>
+
 					<div class="carousel-inner">
 						<div class="item active">
-							<img src="../resources/images/banner3.jpg" alt="">
+							<?php
+								$row = $result->fetch();
+								$imageName = $row["name"];
+								$imagePath = $row["path"];
+							?>
+							<img src=<?php echo "\"$imagePath$imageName\""?> alt="">
 						</div>
 						<div class="item">
-							<img src="../resources/images/banner1.jpg" alt="">
+							<?php
+								$row = $result->fetch();
+								$imageName = $row["name"];
+								$imagePath = $row["path"];
+							?>
+							<img src=<?php echo "\"$imagePath$imageName\""?> alt="">
 						</div>
 						<div class="item">
-							<img src="../resources/images/banner2.jpg" alt="">
+							<?php
+								$row = $result->fetch();
+								$imageName = $row["name"];
+								$imagePath = $row["path"];
+							?>
+							<img src=<?php echo "\"$imagePath$imageName\""?> alt="">
 						</div>
 					</div>
 
@@ -89,11 +110,21 @@
 				<br>
 
 				<div class="row home">
+					<?php
+						$query = "select media.name,media.path,text.content from frame,media,text where media.frame_id = frame.id and text.frame_id = frame.id and frame.name = 'home'";
+
+						$result = $conn->query($query);
+						$row = $result->fetch();
+	 
+						$imageName = $row["name"];
+						$imagePath = $row["path"];
+						$text = $row["content"];
+					?>
 					<div class="col-sm-6">
-						<p class="image-home"><img src ="../resources/images/homeimage.jpg"/></p>
+						<p class="image-home"><img src =<?php echo "\"$imagePath$imageName\""?>/></p>
 					</div>
 					<div class="col-sm-6">
-						<p class="phrase-home">"&Eacute melhor queimar do que apagar aos poucos" <em>(Kurt Cobain)</em></p>
+						<p class="phrase-home"><?php echo "$text"?></p>
 				 	</div>
 				</div>
 			</section>
@@ -109,18 +140,22 @@
 					</div>
 					
 					<div class="row">
+					<?php
+						$query = "select media.name,media.path,text.content from frame,media,text where media.frame_id = frame.id and text.frame_id = frame.id and frame.name = 'about'";
+
+						$result = $conn->query($query);
+						$row = $result->fetch();
+	 
+						$imageName = $row["name"];
+						$imagePath = $row["path"];
+						$text = $row["content"];
+					?>
 						<div class="col-sm-6">
-							<p class="image-home"><img src ="../resources/images/about-ben10-1.jpg"/></p>
+							<p class="image-home"><img src =<?php echo "\"$imagePath$imageName\""?>/></p>
 						</div>
 						<div class="col-sm-6">
-							<p class="text-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. </p>
-							<p class="text-about">Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
+							<p class="text-about"><?php echo "$text"?></p>
+						</>
 					</div>
 				</section>
 			</div>
@@ -170,66 +205,125 @@
 							MÚSICAS
 						</div>
 					</div>
+						<?php
+							$query = "select media.name,media.path from frame,media where media.frame_id = frame.id and frame.name = 'musicas'";
+
+							$result = $conn->query($query);
+						?>
 					<div class="row section-container">
 				        <div class="col-md-4">
+				        	<?php
+								$row = $result->fetch();
+								$imageName = $row["name"];
+								$imagePath = $row["path"];
+
+								$row = $result->fetch();
+								$musicName = $row["name"];
+								$musicPath = $row["path"];
+							?>
 				        	<div>
-								<img class="image" src="../resources/images/musica1.jpg">
+								<img class="image" src=<?php echo "\"$imagePath$imageName\""?>>
 							</div>
 							<div>
 								<audio class="music" controls>
-									<source src="../resources/music/music1.mp3" type="audio/mpeg">
+									<source src=<?php echo "\"$musicPath$musicName\""?> type="audio/mpeg">
 								</audio> 
 							</div>
 				        </div>
 				        <div class="col-md-4">
+				        	<?php
+								$row = $result->fetch();
+								$imageName = $row["name"];
+								$imagePath = $row["path"];
+
+								$row = $result->fetch();
+								$musicName = $row["name"];
+								$musicPath = $row["path"];
+							?>
 				        	<div>
-								<img class="image" src="../resources/images/musica2.jpg">
+								<img class="image" src=<?php echo "\"$imagePath$imageName\""?>>
 							</div>
 							<div>
 								<audio class="music" controls>
-									<source src="../resources/music/music2.mp3" type="audio/mpeg">
+									<source src=<?php echo "\"$musicPath$musicName\""?> type="audio/mpeg">
 								</audio> 
 							</div>
 				        </div>
 				        <div class="col-md-4">
+				        	<?php
+								$row = $result->fetch();
+								$imageName = $row["name"];
+								$imagePath = $row["path"];
+
+								$row = $result->fetch();
+								$musicName = $row["name"];
+								$musicPath = $row["path"];
+							?>
 				        	<div>
-								<img class="image" src="../resources/images/musica3.jpg">
+								<img class="image" src=<?php echo "\"$imagePath$imageName\""?>>
 							</div>
 							<div>
 								<audio class="music" controls>
-									<source src="../resources/music/music3.mp3" type="audio/mpeg">
+									<source src=<?php echo "\"$musicPath$musicName\""?> type="audio/mpeg">
 								</audio> 
 							</div>
 				        </div>
 	    			</div>
 					<div class="row music-container">
 				        <div class="col-md-4">
+				        	<?php
+								$row = $result->fetch();
+								$imageName = $row["name"];
+								$imagePath = $row["path"];
+
+								$row = $result->fetch();
+								$musicName = $row["name"];
+								$musicPath = $row["path"];
+							?>
 				        	<div>
-								<img class="image" src="../resources/images/musica4.jpg">
+								<img class="image" src=<?php echo "\"$imagePath$imageName\""?>>
 							</div>
 							<div>
 								<audio class="music" controls>
-									<source src="../resources/music/music4.mp3" type="audio/mpeg">
+									<source src=<?php echo "\"$musicPath$musicName\""?> type="audio/mpeg">
 								</audio> 
 							</div>
 				        </div>
 				        <div class="col-md-4">
+				        	<?php
+								$row = $result->fetch();
+								$imageName = $row["name"];
+								$imagePath = $row["path"];
+
+								$row = $result->fetch();
+								$musicName = $row["name"];
+								$musicPath = $row["path"];
+							?>
 				        	<div>
-								<img class="image" src="../resources/images/musica5.jpg">
+								<img class="image" src=<?php echo "\"$imagePath$imageName\""?>>
 							</div>
 							<div>
 								<audio class="music" controls>
-									<source src="../resources/music/music5.mp3" type="audio/mpeg">
+									<source src=<?php echo "\"$musicPath$musicName\""?> type="audio/mpeg">
 								</audio> 
 							</div>
 				        </div>
 				        <div class="col-md-4">
+				        	<?php
+								$row = $result->fetch();
+								$imageName = $row["name"];
+								$imagePath = $row["path"];
+
+								$row = $result->fetch();
+								$musicName = $row["name"];
+								$musicPath = $row["path"];
+							?>
 				        	<div>
-								<img class="image" src="../resources/images/musica6.jpg">
+								<img class="image" src=<?php echo "\"$imagePath$imageName\""?>>
 							</div>
 							<div>
 								<audio class="music" controls>
-									<source src="../resources/music/music6.mp3" type="audio/mpeg">
+									<source src=<?php echo "\"$musicPath$musicName\""?> type="audio/mpeg">
 								</audio> 
 							</div>
 				        </div>
