@@ -59,7 +59,7 @@
 					</ol>
 
 						<?php
-							$query = "select media.name,media.path from frame,media where media.frame_id = frame.id and frame.name = 'home'";
+							$query = "SELECT media.name,media.path FROM frame,media WHERE media.frame_id = frame.id AND frame.name = 'home'";
 
 							$result = $conn->query($query);
 
@@ -111,7 +111,7 @@
 
 				<div class="row home">
 					<?php
-						$query = "select media.name,media.path,text.content from frame,media,text where media.frame_id = frame.id and text.frame_id = frame.id and frame.name = 'home'";
+						$query = "SELECT media.name,media.path,text.content FROM frame,media,text WHERE media.frame_id = frame.id AND text.frame_id = frame.id AND frame.name = 'home'";
 
 						$result = $conn->query($query);
 						$row = $result->fetch();
@@ -141,7 +141,7 @@
 					
 					<div class="row">
 					<?php
-						$query = "select media.name,media.path,text.content from frame,media,text where media.frame_id = frame.id and text.frame_id = frame.id and frame.name = 'about'";
+						$query = "SELECT media.name,media.path,text.content FROM frame,media,text WHERE media.frame_id = frame.id AND text.frame_id = frame.id AND frame.name = 'about'";
 
 						$result = $conn->query($query);
 						$row = $result->fetch();
@@ -206,7 +206,7 @@
 						</div>
 					</div>
 						<?php
-							$query = "select media.name,media.path from frame,media where media.frame_id = frame.id and frame.name = 'musicas'";
+							$query = "SELECT media.name,media.path FROM frame,media WHERE media.frame_id = frame.id AND frame.name = 'musicas'";
 
 							$result = $conn->query($query);
 						?>
