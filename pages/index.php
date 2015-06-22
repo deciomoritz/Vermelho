@@ -17,8 +17,31 @@
 		<link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
+
+
 	</head>
 	<body>
+		<script type="text/javascript">
+	        
+	        $('#myCarousel').carousel({
+	          interval: 10000;
+	        })
+alert("hi");
+	        // $('.carousel .item').each(function(){
+	        //   var next = $(this).next();
+	        //   if (!next.length) {
+	        //     next = $(this).siblings(':first');
+	        //   }
+	        //   next.children(':first-child').clone().appendTo($(this));
+	          
+	        //   if (next.next().length>0) {
+	        //     next.next().children(':first-child').clone().appendTo($(this));
+	        //   }
+	        //   else {
+	        //     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+	        //   }
+	        // });
+	     </script>
 		<header>
 			<nav class="navbar navbar-inverse navbar-fixed-top menu-item" id="my-navbar">
 				<div class="container">
@@ -169,32 +192,29 @@
 					<div class="my-label">
 						SHOWS
 					</div>
-				</div>
-				<div class="row section-container">
-					<div class="col-sm-6">
-						<div>
-							<div>
-								<img class="image" id="show1" src="../resources/images/show1.jpg">
-								<div style="text-align: center; margin-top: 5%;">
-									<a href="http://www.blueticket.com.br" style="color: red">Clique aqui para garantir seu ingresso</a>
-								</div>
-							</div>
+
+					<div class="col-md-7">
+						<div class="carousel slide" id="myCarousel">
+						  <div class="carousel-inner">
+						    <div class="item active">
+						      <div class="col-md-4"><a href="#"><img src="../resources/images/flyer1.jpg" class="img-responsive"></a></div>
+						    </div>
+						    <div class="item">
+						      <div class="col-md-4"><a href="#"><img src="../resources/images/flyer2.png" class="img-responsive"></a></div>
+						    </div>
+						    <div class="item">
+						      <div class="col-md-4"><a href="#"><img src="../resources/images/flyer3.jpg" class="img-responsive"></a></div>
+						    </div>
+
+						  </div>
+						  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+						  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
 						</div>
-					</div>
-					<div class="col-sm-6">
-						<div>
-							<div>
-								<img class="image" id="show2" src="../resources/images/show2.jpg">
-								<div style="text-align: center; margin-top: 5%;">
-									<a href="http://www.blueticket.com.br" style="color: red">Clique aqui para garantir seu ingresso</a>
-								</div>
-							</div>
 						</div>
-					</div>
+
+
 				</div>
 			</section>
-			<br>
-			<br>
 		</div>
 
 		<div class="bg-grey">
