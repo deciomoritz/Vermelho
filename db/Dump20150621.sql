@@ -40,7 +40,7 @@ CREATE TABLE `text` (
 
 LOCK TABLES `text` WRITE;
 /*!40000 ALTER TABLE `text` DISABLE KEYS */;
-INSERT INTO `text` VALUES (1,'\"&Eacute melhor queimar do que apagar aos poucos\" <em>(Kurt Cobain)</em>',1),(2,'\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n',2);
+INSERT INTO `text` VALUES (1,'Trazendo o melhor da melhor &eacute;poca do Rock n\' Roll desde 2007!',1),(2,'Ben Rock nasceu em Itaporanga, em 1993. Mesmo n&atilde;o tendo vivido o melhor momento do Rock n Roll, faz um tributo a esssa &eacute;poca m&aacute;gica: os anos 80. Com repert&oacute;rio com cl&aacute;ssicos como Whitesnake, Bon Jovi, Def Leppard, Black Sabbath, Styx, Asia, Toto e outros grandes artistas do per&iacute;odo. Ben Rock &eacute; focado em trazer n&atilde;o s&oacute; m&uacute;sica, mas uma perfomance completa a todo lugar que toca em sua turn&ecirc;!',2);
 /*!40000 ALTER TABLE `text` ENABLE KEYS */;
 UNLOCK TABLES;
 

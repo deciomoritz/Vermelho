@@ -17,31 +17,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
-
-
 	</head>
 	<body>
-		<script type="text/javascript">
-	        
-	        $('#myCarousel').carousel({
-	          interval: 10000;
-	        })
-alert("hi");
-	        // $('.carousel .item').each(function(){
-	        //   var next = $(this).next();
-	        //   if (!next.length) {
-	        //     next = $(this).siblings(':first');
-	        //   }
-	        //   next.children(':first-child').clone().appendTo($(this));
-	          
-	        //   if (next.next().length>0) {
-	        //     next.next().children(':first-child').clone().appendTo($(this));
-	        //   }
-	        //   else {
-	        //     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-	        //   }
-	        // });
-	     </script>
+
 		<header>
 			<nav class="navbar navbar-inverse navbar-fixed-top menu-item" id="my-navbar">
 				<div class="container">
@@ -193,27 +171,6 @@ alert("hi");
 						SHOWS
 					</div>
 
-					<div class="col-md-7">
-						<div class="carousel slide" id="myCarousel">
-						  <div class="carousel-inner">
-						    <div class="item active">
-						      <div class="col-md-4"><a href="#"><img src="../resources/images/flyer1.jpg" class="img-responsive"></a></div>
-						    </div>
-						    <div class="item">
-						      <div class="col-md-4"><a href="#"><img src="../resources/images/flyer2.png" class="img-responsive"></a></div>
-						    </div>
-						    <div class="item">
-						      <div class="col-md-4"><a href="#"><img src="../resources/images/flyer3.jpg" class="img-responsive"></a></div>
-						    </div>
-
-						  </div>
-						  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-						  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-						</div>
-						</div>
-
-
-				</div>
 			</section>
 		</div>
 
@@ -435,16 +392,16 @@ alert("hi");
 
 		<footer>
 			<div class="section-container social-net-container">
-				<a href="http://facebook.com"> 
+				<a href="www.facebook.com/freakyomichiyo"> 
 					<i class="fa fa-facebook social-net-icon fa-facebook"></i>
 				</a>
-				<a href="http://twitter.com">
+				<a href="http://www.twitter.com/freakyomichiyo">
 					<i class="fa fa-twitter-square social-net-icon fa-twitter"></i>
 				</a>
-				<a href="https://soundcloud.com/">
+				<a href="https://soundcloud.com/thegoldencub">
 					<i class="fa fa-soundcloud social-net-icon fa-soundcloud"></i>
 				</a>
-				<a href="https://instagram.com/">
+				<a href="www.instagram.com/hailtothekinglion">
 					<i class="fa fa-instagram social-net-icon fa-instagram"></i>
 				</a>
 			</div>		
